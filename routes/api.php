@@ -19,3 +19,5 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 });
 
 Route::get('/products', 'Api\ProductController@index');
+Route::post('/loginAndroid', 'Api\LoginController@loginAndroid');
+Route::post('/storeOrder', 'Api\PembelianController@store');
